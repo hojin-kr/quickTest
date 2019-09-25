@@ -30,5 +30,12 @@ var app6 = new Vue({
   }
 })
 
+            alert("geolocation test start");
+            navigator.geolocation.getCurrentPosition(function(position) {
+                let lat = position.coords.latitude;
+                let lng = position.coords.longitude;
+                alert(lat); 
+});
+
 </script>
 <html>
